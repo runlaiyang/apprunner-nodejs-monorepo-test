@@ -12,7 +12,7 @@ exec("node -v", function (error, stdout, stderr) {
 
 app.get('/', function (request, response) {
     var number = dependency.getNumber();
-    var output = {'app_name': "Update - Hello Express CICD", 'node_version': node_version, 'env_vars': process.env, 'Number from library dependency': number};
+    var output = {'app_name': "Trigger 2 - Hello Express CICD", 'node_version': node_version, 'env_vars': process.env, 'Number from library dependency': number};
     response.send(output);
 });
 
